@@ -1,42 +1,42 @@
-import React,{useState} from 'react';
+ import React, {useState} from 'react';
+ import {FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faAlignRight,faTimes} from '@fortawesome/free-solid-svg-icons';
 import '../App.css';
-import {FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faAlignRight} from '@fortawesome/free-solid-svg-icons';
-import {SidebarData} from './sidebardata';
-import { Link } from 'react-router-dom';
+import { MenuList } from './menulist';
+import {Link} from 'react-router-dom';
+
 
 function Navigation(){
-     const[sidebar,setSidebar] = useState(false);
-      
-     const showSidebar = () => setSidebar(!sidebar);
+         
+    const[clicked,setClicked] = useState(false);
+
+       const menuList = MenuList.map(({url,cName,icon,title},index) =>{
+           return(
+           <li key={index}>
+               <Link to={url}>{icon} {title}</Link>
+           </li>
+           )
+       });
+       const handleClick = () =>{
+           setClicked(!clicked);
+       };
     return(
-        <>
-          <div className="navbar">
-         <h4 className="logo-name"><a href="/">NjeriMuchiri</a></h4>
-         <button onClick={showSidebar} className="nav-bars">
-            <FontAwesomeIcon icon={faAlignRight} />
-         </button>
+    <>
+      <nav>
+          <div className="logo"><a href="/">
+        NjeriMuchiri
+        </a>
           </div>
-          <nav className={sidebar ? 'nav-menu active' : 'nav-menu' }>
-          <ul className="nav-menu-items" onClick={showSidebar} >
-              <li className="navbar-toggle">
-                  {/* <Link to="#" className="nav-bars"><FontAwesomeIcon icon={faTimes}/> 
-                  </Link>*/}
-                  </li>
-               {SidebarData.map((item,index) =>{
-                   return(
-                       <li key={index} className={item.cName}>
-                           <Link to={item.path}>
-                               {item.icon}
-                               <span>{item.title}</span>
-                           </Link>
-                           </li>
-                   )
-               })}
+          <div className="menu-icon" onClick={handleClick}>
+              {clicked ? 
+             <FontAwesomeIcon className="faicon" icon={faTimes} /> 
+            : <FontAwesomeIcon className="faicon2" icon={faAlignRight} />}
+              </div>
+          <ul className={clicked ? "menu-list" : "menu-list close"}>
+            {menuList}
           </ul>
-        </nav>
-         </>
-    )
-        
+      </nav>
+    </>
+    );   
 };
 export default Navigation;

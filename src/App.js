@@ -3,21 +3,25 @@ import './App.css';
 import Home from './pages/home';
 import Contact from "./pages/contact";
 import About from "./pages/about";
-import Projects from "./pages/projects";
+import Project from "./pages/projects";
+import Navigation from "./components/nav";
 
 
 function App(){
 return(
+  
  <Router>
+   <Navigation/>
    <Switch>
      <Route path="/" exact component={Home} />
-     <Route path="/About"  exact component={About} />
-     <Route path="/Projects" exact component={Projects} />
-     <Route path="/Contact"  exact component={Contact} />
+     <Route path="/About"   component={About} />
+     <Route path="/Projects"  component={Project} />
+     <Route path="/Contact"  component={Contact} />
      
    </Switch>
   </Router>
-)
+
+);
 }
 
 
