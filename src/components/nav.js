@@ -22,7 +22,7 @@ function Navigation(){
        };
     return(
     <>
-      <nav>
+      <nav className="navigation">
           <div className="logo"><a href="/">
         NjeriMuchiri
         </a>
