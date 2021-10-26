@@ -290,6 +290,12 @@
  /* end of container page styling */
 
  /* about-me section styling */
+ /* .clearfix::after,
+ .clearfix::before {
+   content: '';
+   clear: both;
+   display: table;
+ } */
  .part{
    background:hsl(45, 100%, 96%);
    margin-top: 50px;
