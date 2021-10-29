@@ -10,7 +10,6 @@ import Navigation from "./components/nav";
 function App(){
 return(
  <Router>
-   <div className="container">
    <Navigation/>
    <Switch>
      <Route path="/" exact component={Home} />
@@ -19,7 +18,6 @@ return(
      <Route path="/Contact"  component={Contact} />
      
    </Switch>
-  </div>
   </Router>
 );
 }
