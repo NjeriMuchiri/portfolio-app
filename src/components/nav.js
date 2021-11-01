@@ -22,7 +22,8 @@ function Navigation(){
        };
     return(
     <>
-      <nav className="navigation">
+       <section>
+      <nav className="navigation container">
           <div className="logo"><a href="/">
         NjeriMuchiri
         </a>
@@ -36,6 +37,7 @@ function Navigation(){
             {menuList}
           </ul>
       </nav>
+      </section>
     </>
     );   
 };
