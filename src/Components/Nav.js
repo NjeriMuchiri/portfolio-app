@@ -17,10 +17,15 @@ const Nav = () => {
        </button>
       </div>
       <ul className='nav-list'>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/Skills">Skills</Link></li>
-        <li><Link to="/Aboutme">Aboutme</Link></li>
-        <li><Link to="/Contact">Contacts</Link></li>
+        <li 
+        className='list'><Link to="/" style={{textDecoration:'none', color:'#c9ffe5' ,textTransform:'uppercase'}}>Home</Link></li>
+        <li 
+        className='list'><Link to="/Skills"
+        style={{textDecoration:'none', color:'#c9ffe5' ,textTransform:'uppercase'}}>Skills</Link></li>
+        <li className='list'><Link to="/Aboutme"
+        style={{textDecoration:'none', color:'#c9ffe5' ,textTransform:'uppercase'}}>Aboutme</Link></li>
+        <li className='list'><Link to="/Contact"
+        style={{textDecoration:'none', color:'#c9ffe5' ,textTransform:'uppercase'}}>Contacts</Link></li>
 
         
       </ul>
