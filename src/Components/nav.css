@@ -15,16 +15,16 @@ section{
 .nav-toggle {
     margin-right:30px;
     font-size: 1.8rem;
-    color:#b0e0e6;
+    color:#e0ffff;
     border: none;
     background: transparent;
-    transition: all 450ms;
+    transition: all 0.3s linear;
     cursor: pointer;
 }
 
 .nav-toggle:hover {
-    color: #00a693;
-    transform: scale(1.1);
+    color: #b0e0e6;
+    transform: rotate(360deg);
 }
 .logo{
     height:170px;
