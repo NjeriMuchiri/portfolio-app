@@ -38,7 +38,7 @@ const Nav = () => {
        </button>
       </div>
       <ul className={toggle ? 'show-nav-list' : 'nav-list'}>
-        <li><Link to="/" style={{textDecoration:'none', color:'#c9ffe5' ,textTransform:'uppercase'}}>Home</Link></li>
+        <li><Link to="/" style={{textDecoration:'none', color:'#c9ffe5' ,textTransform:'uppercase','&:hover':{color:'#FFFF'}}}>Home</Link></li>
         <li><Link to="/Skills"
         style={{textDecoration:'none', color:'#c9ffe5' ,textTransform:'uppercase'}}>Skills</Link></li>
         <li><Link to="/Aboutme"
