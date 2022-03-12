@@ -48,7 +48,6 @@ section{
     letter-spacing:0.1em;
     transition: all 0.3s linear;
 }
- 
 @media screen and (min-width:800px) {
     .nav-sect {
         max-width: 1170px;

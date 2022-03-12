@@ -11,7 +11,6 @@ const Nav = () => {
         
      const handleClick = ()=>{
        setToggle(!toggle);
-
      }
 
   return (
