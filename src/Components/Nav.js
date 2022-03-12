@@ -1,12 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './nav.css';
 import '../App.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAlignLeft } from '@fortawesome/free-solid-svg-icons';
+import { faAlignLeft,faCircleXmark } from '@fortawesome/free-solid-svg-icons';
 import Logo from '../images/logo1.png';
 
 const Nav = () => {
+   const [toggle,setToggle] = useState('');  
+        
+     const handleClick = ()=>{
+
+     }
+
   return (
     <section>
     <nav className='nav-sect'>
