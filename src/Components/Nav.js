@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import './nav.css';
 import '../App.css';
 import { Link } from 'react-router-dom';
@@ -7,15 +7,29 @@ import { faAlignLeft,faChessQueen} from '@fortawesome/free-solid-svg-icons';
 import Logo from '../images/logo1.png';
 
 const Nav = () => {
-   const [toggle,setToggle] = useState(false);  
+   const [toggle,setToggle] = useState(false);
+   const [show,setShow] = useState(false);  
         
      const handleClick = ()=>{
        setToggle(!toggle);
-     }
+     };
+
+     useEffect(() => {
+       window.addEventListener('scroll', () =>{
+         if(window.scrollY > 70 ){
+               setShow(true);
+         }else{
+           setShow(false);
+         }
+       });
+       return () => {
+         window.removeEventListener('scroll');
+       }
+     }, []);
 
   return (
     <section>
-    <nav className='nav-sect'>
+    <nav className={`nav-sect ${show && 'nav__color'}`}>
       <div className='nav-header'>
       <Link to='/'><img className='logo' src={Logo} alt="logo" /></Link> 
        <button onClick={handleClick} className='nav-toggle'>

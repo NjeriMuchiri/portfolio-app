@@ -1,8 +1,19 @@
 import React from 'react'
-
+import '../Components/Home.css';
+import Backy from '../images/backy.jpeg';
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+    <section>
+      <div className='container'>
+       <div className='banner'>
+         <img src={Backy} alt="computers" />
+
+       </div>
+      </div>
+    </section>
+
+    </>
   )
 }
 
