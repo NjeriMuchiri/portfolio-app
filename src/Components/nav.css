@@ -41,9 +41,9 @@ section{
  li{
     cursor: pointer;
     display:block;
-    padding:0.5rem 1rem;
+    padding:0.6rem 3rem;
     list-style-type: none;
-    font-size:0.8rem;
+    font-size:0.9rem;
     font-family:'Comfortaa',cursive;
     letter-spacing:0.1em;
     transition: all 0.3s linear;
@@ -71,7 +71,8 @@ section{
     }
   .nav-list li{
         padding:0;
-        margin:0 1.3rem
+        margin:0 1.3rem;
+        font-size:0.8rem;
   }
 
 }
