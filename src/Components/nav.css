@@ -31,10 +31,13 @@ section{
     object-fit: contain;
     margin-left:-30px;
 }
-/* .nav-list {
+.nav-list {
     height: 0;
     overflow: hidden;
-} */
+}
+.show-nav-list{
+    height:10rem;
+}
  li{
     cursor: pointer;
     display:block;
