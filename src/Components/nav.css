@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 .nav-sect{
+   max-width: 1170px;
    position:fixed;
    top:0;
    width:100%;
@@ -82,9 +83,10 @@
         height:60px;
         z-index:1;
     }
-    /* .nav__color {
-        background: linear-gradient(to right, rgba(0, 66, 66, 1), rgba(1, 1, 1, 0.9));
-    } */
+     .nav__color {
+        /* background: linear-gradient(to right, rgba(0, 66, 66, 1), rgba(1, 1, 1, 0.9)); */
+         background: #100C08;
+    } 
     .logo{
         height:170px;
         object-fit: contain;

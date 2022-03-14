@@ -1,0 +1,56 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.aboutme-section{
+    background:#264348;
+    min-height: 100vh;
+    max-width:1170px;
+    min-width:100vw;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding-top:150px;
+    overflow: auto;
+}
+.aboutme-section img{
+    border-radius: 20px;
+    object-fit: contain;
+    height:450px;
+    margin-left:45px;
+    position:relative;
+    justify-self: center;
+}
+.kashee-info{
+    max-width:25rem;
+    color:#aaf0d1;
+    letter-spacing: 0.1em;
+    font-family: 'Sansita Swashed',cursive;
+    font-size:1.0rem;
+    margin-top:20px;
+    word-spacing: 0.2em;
+}
+@media screen and (min-width:800px){
+    .aboutme-section{
+        display:grid;
+        grid-template-columns: 2fr 2fr;
+    }
+    .aboutme-section img{
+        border-radius: 20px;
+        object-fit: contain;
+        /* position:relative; */
+        display: block;
+        margin-left:100px;
+
+    }
+    .aboutme-section img::before{
+        content:'';
+        position:absolute;
+        border:2px solid #aaf0d1;
+        width:100%;
+        height:100%;
+        top:2rem;
+        right:-2rem;
+    }
+}
