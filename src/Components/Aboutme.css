@@ -60,10 +60,18 @@
         perspective: 1px;
     }
     .info-section .kashee-info{
-        display: block;
+        display: grid;
+        place-items: center;
+        grid-template-columns: 400px;
+        max-width: 25rem;
+        line-height: 1.5;
+        letter-spacing: 0.1em;
+        word-spacing: 0.2em;
         max-width: 25rem;
         text-align: center;
-        margin-right: 60px;
+        margin-top: 30px;
+        margin-bottom:30px;
+        margin-right:20px;
     }
        
 }
