@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className='footer-part'>
         <div className='placing-items'>
-            <p className='me'>Copyright &#169; Njeri Muchiri</p>
+            <p className='me'>Copyright &#169; Njeri Muchiri.</p>
              <img
             className='kashee-img' 
             src={Kashee} 
