@@ -37,14 +37,14 @@ const Nav = () => {
          <FontAwesomeIcon icon={faAlignLeft}/>}
        </button>
       </div>
-      <ul className={toggle ? 'show-nav-list' : 'nav-list' }>
-        <li><Link to="/" style={{textDecoration:'none', color:'#c9ffe5' ,textTransform:'uppercase','&:hover':{color:'#FFFF'}}}>Home</Link></li>
+      <ul className={toggle ? 'show-nav-list' && 'nav__color' : 'nav-list' }>
+        <li><Link to="/" style={{textDecoration:'none', color:'#c9ffe5' ,textTransform:'uppercase',fontWeight:900}}>Home</Link></li>
         <li><Link to="/Skills"
-        style={{textDecoration:'none', color:'#c9ffe5' ,textTransform:'uppercase'}}>Skills</Link></li>
+        style={{textDecoration:'none', color:'#c9ffe5' ,textTransform:'uppercase',fontWeight:900}}>Skills</Link></li>
         <li><Link to="/Aboutme"
-        style={{textDecoration:'none', color:'#c9ffe5' ,textTransform:'uppercase'}}>Aboutme</Link></li>
+        style={{textDecoration:'none', color:'#c9ffe5' ,textTransform:'uppercase',fontWeight:900}}>Aboutme</Link></li>
         <li><Link to="/Contact"
-        style={{textDecoration:'none', color:'#c9ffe5' ,textTransform:'uppercase'}}>Contacts</Link></li>
+        style={{textDecoration:'none', color:'#c9ffe5' ,textTransform:'uppercase',fontWeight:900}}>Contacts</Link></li>
         
       </ul>
 

@@ -52,7 +52,6 @@
     overflow: hidden;
 }
 .show-nav-list{
-    margin-top:50px;
     height:10rem;
 }
  li{
@@ -64,6 +63,7 @@
     font-family:'Comfortaa',cursive;
     letter-spacing:0.1em;
     transition: all 0.3s linear;
+    margin-top: 20px;
 }
 
 @media screen and (min-width:800px) {
