@@ -20,18 +20,28 @@
     
 }
 .aboutme-section::-webkit-scrollbar{
-    display:none;
+    display:none !important;
 }
 .info-section img{
     flex:50%;
-    border-radius: 20px;
     object-fit: contain;
+    border-radius: 30px !important;
     height:450px;
     margin-left:45px;
     justify-self: center;
     display:block;
     margin-top: 50px;
-
+    animation:Kashee 3s ease-in both ;
+}
+@keyframes Kashee{
+    from{
+        opacity:0%;
+        width:0%;
+    }
+    to{
+        opacity:100%;
+        width:100%;
+    }
 }
 .info-section .kashee-info{
     flex:50%;
@@ -44,6 +54,18 @@
     margin-top:80px;
     word-spacing: 0.2em;
     line-height: 1.5;
+    animation: Kashee-mover 3s ease 450ms 1 alternate both;
+}
+@keyframes Kashee-mover {
+    from {
+        opacity: 0%;
+        width: 0%;
+    }
+
+    to {
+        opacity: 100%;
+        width: 100%;
+    }
 }
 .kashee-info span{
     color:aquamarine;
