@@ -1,0 +1,22 @@
+.footer-part{
+    border-radius: 20px;
+    height:50px;
+    width:100%;
+    background:#dcdcdc;
+}
+.placing-items{
+    display:grid;
+    place-items: center;
+    padding-top:15px;
+}
+.me{
+    color:#008b8b;
+    font-family: 'Comfortaa',cursive;
+}
+.kashee-img{
+    border-radius:50px 40px;
+    height:3rem;
+    width:3rem;
+    object-fit: contain;
+    object-fit: cover;
+}

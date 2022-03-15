@@ -5,11 +5,8 @@
 }
 .aboutme-section{
     background:#264348;
-    min-height: 100vh;
-    max-width:1170px;
-    min-width:100vw;
-    overflow-y: hidden;
-    overflow-x: scroll;
+    min-height: 135vh;
+    max-width:1470px;
 }
 .info-section{
     display:flex;
@@ -18,9 +15,6 @@
     padding-top:150px;
     margin-bottom: 30px;
     
-}
-.aboutme-section::-webkit-scrollbar{
-    display:none !important;
 }
 .info-section img{
     flex:50%;
@@ -70,6 +64,7 @@
 .kashee-info span{
     color:aquamarine;
     text-transform: capitalize;
+    text-shadow: 3px 2px 5px #e0ffff;
 }
 @media screen and (max-width:800px){
     .info-section img .kashee-info {
