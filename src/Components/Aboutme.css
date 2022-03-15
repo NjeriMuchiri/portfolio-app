@@ -24,7 +24,7 @@
 }
 .kashee-info{
     max-width:25rem;
-    color:#aaf0d1;
+    color:#dcdcdc;
     letter-spacing: 0.1em;
     font-family: 'Sansita Swashed',cursive;
     font-size:1.0rem;
@@ -34,7 +34,6 @@
 @media screen and (min-width:800px){
     .aboutme-section{
         display:grid;
-        grid-template-columns: 2fr 2fr;
     }
     .aboutme-section img{
         border-radius: 20px;
