@@ -8,48 +8,58 @@
     min-height: 100vh;
     max-width:1170px;
     min-width:100vw;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.info-section{
+    display:flex;
+    flex-wrap: wrap;
     text-align: center;
     padding-top:150px;
-    overflow: auto;
+    margin-bottom: 30px;
+    
 }
-.aboutme-section img{
+.aboutme-section::-webkit-scrollbar{
+    display:none;
+}
+.info-section img{
+    flex:50%;
     border-radius: 20px;
     object-fit: contain;
     height:450px;
     margin-left:45px;
-    position:relative;
     justify-self: center;
+    display:block;
+    margin-top: 50px;
+
 }
-.kashee-info{
+.info-section .kashee-info{
+    flex:50%;
+    margin-right:100px;
     max-width:25rem;
     color:#dcdcdc;
     letter-spacing: 0.1em;
     font-family: 'Sansita Swashed',cursive;
     font-size:1.0rem;
-    margin-top:20px;
+    margin-top:80px;
     word-spacing: 0.2em;
+    line-height: 1.5;
 }
-@media screen and (min-width:800px){
-    .aboutme-section{
-        display:grid;
+@media screen and (max-width:800px){
+    .info-section img .kashee-info {
+        flex:100%;
     }
-    .aboutme-section img{
+    .info-section img{
+        display:block;
         border-radius: 20px;
-        object-fit: contain;
-        /* position:relative; */
+        margin-left:2px;
+        perspective: 1px;
+    }
+    .info-section .kashee-info{
         display: block;
-        margin-left:100px;
-
+        max-width: 25rem;
+        text-align: center;
+        margin-right: 60px;
     }
-    .aboutme-section img::before{
-        content:'';
-        position:absolute;
-        border:2px solid #aaf0d1;
-        width:100%;
-        height:100%;
-        top:2rem;
-        right:-2rem;
-    }
+       
 }
