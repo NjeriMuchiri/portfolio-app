@@ -20,6 +20,14 @@
 .karibu-info span{
     color:#008b8b;
     text-transform: uppercase;
-    font-family:'Satisfy',cursive;
+}
+.karibu-info span::after{
+    content:'';
+    width:24%;
+    height:2px;
+    margin-left:15px;
+    margin-bottom:5px;
+    display:block;
+    background-color:#008b8b;
 }
 
