@@ -2,7 +2,6 @@ import { faCommentDots } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import '../Components/Contact.css';
-import Footer from '../Components/Footer';
 const Contact = () => {
   return (
     <>
@@ -18,7 +17,6 @@ const Contact = () => {
 
       </article>
     </div>
-    <Footer/>
       
     </>
   )

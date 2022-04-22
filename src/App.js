@@ -1,25 +1,18 @@
 import './App.css';
 import Nav from './Components/Nav';
-import { BrowserRouter as Router,Switch,Route, } from 'react-router-dom';
-import Home from './Pages/Home';
-import Skills from './Pages/Skills';
-import Aboutme from './Pages/Aboutme';
-import Contact from './Pages/Contact';
-
-
+import { 
+  BrowserRouter as 
+  Router,
+}  from 'react-router-dom';
+import AnimatedRoutes from './Components/AnimatedRoutes';
+import Footer from './Components/Footer';
 
 function App(){
-    // const location = useLocation();
 return(
   <Router>
     <Nav />
-    <Switch>
-      <Route path="/" exact component={Home} />
-      <Route path="/Skills" exact component={Skills} />
-      <Route path="/Aboutme" exact component={Aboutme} />
-      <Route path="/Contact" exact component={Contact} />
-
-    </Switch>
+    <AnimatedRoutes />
+    <Footer />
   </Router>
 )
   
