@@ -3,10 +3,23 @@
     max-width:1800px;
     background: #f0f8ff;
 }
-
-h1{
-    position:absolute;
-    top: 200px;
-    left:50px;
-    color:aquamarine;
+.home-abt{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding-top:170px;
 }
+.karibu-info{
+    max-width:15rem;
+    margin-left:30px;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    font-family: 'Comfortaa',cursive;
+    color:#686868;
+}
+.karibu-info span{
+    color:#008b8b;
+    text-transform: uppercase;
+    font-family:'Satisfy',cursive;
+}
+
