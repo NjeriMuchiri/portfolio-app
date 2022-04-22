@@ -28,7 +28,7 @@
 .nav-toggle {
     margin-right:30px;
     font-size: 1.8rem;
-    color:#e0ffff;
+    color:#007474;
     border: none;
     background: transparent;
     transition: all 0.3s linear;
@@ -36,7 +36,7 @@
 }
 
 .nav-toggle:hover {
-    color: #b0e0e6;
+    color: #20b2aa;
     transform: rotate(360deg);
 }
 .logo{

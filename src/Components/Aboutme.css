@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .aboutme-section{
-    background:#264348;
+    background:#eae0c8;
     min-height: 135vh;
     max-width:1470px;
 }
@@ -41,7 +41,7 @@
     flex:50%;
     margin-right:100px;
     max-width:25rem;
-    color:#dcdcdc;
+    color:#696969;
     letter-spacing: 0.1em;
     font-family: 'Sansita Swashed',cursive;
     font-size:1.0rem;
@@ -62,9 +62,9 @@
     }
 }
 .kashee-info span{
-    color:aquamarine;
+    color:#264348;
     text-transform: capitalize;
-    text-shadow: 3px 2px 5px #e0ffff;
+    text-shadow: 3px 2px 5px #696969;
     overflow: hidden;
     --webkit-backface-visibility: hidden;
     --webkit-perspective: 1000;
