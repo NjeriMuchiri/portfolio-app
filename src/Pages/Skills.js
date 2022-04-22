@@ -1,8 +1,17 @@
 import React from 'react'
+import {motion} from "framer-motion/dist/framer-motion.dev";
 
-const Skills = () => {
+function Skills(){
   return (
-    <div>Skills</div>
+    <motion.div 
+     
+       initial = {{width: 0}}
+       animate = {{width: "100%"}}
+       exit = {{x: window.innerWidth, transition:{duration: 0.1}}}
+    
+    >
+      Skills
+    </motion.div>
   )
 }
 

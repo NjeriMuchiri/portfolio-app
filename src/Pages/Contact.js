@@ -2,10 +2,18 @@ import { faCommentDots } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import '../Components/Contact.css';
-const Contact = () => {
+import {motion} from "framer-motion/dist/framer-motion.dev";
+
+function Contact(){
   return (
     <>
-    <div className='contact-banner'>
+    <motion.div className='contact-banner'
+        
+       initial = {{width: 0}}
+       animate = {{width: "100%"}}
+       exit = {{x: window.innerWidth, transition:{duration: 0.1}}}
+
+    >
       <article className='contact-info'>
          <form className='message-form'>
            <p className='info-cont'>Leave a Message<FontAwesomeIcon icon={faCommentDots}style={{color:'#9bddff',marginLeft:5,fontSize:20}}/></p>
@@ -16,7 +24,7 @@ const Contact = () => {
          </form>
 
       </article>
-    </div>
+    </motion.div>
       
     </>
   )

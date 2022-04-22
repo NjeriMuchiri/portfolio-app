@@ -1,15 +1,21 @@
 import React from 'react'
 import '../Components/Home.css';
-const Home = () => {
+import {motion} from "framer-motion/dist/framer-motion.dev";
+
+function Home(){
   return (
     <>
-    <section>
-      <div className='container'>
+      <motion.div className='container'
+          
+       initial = {{width: 0}}
+       animate = {{width: "100%"}}
+       exit = {{x: window.innerWidth, transition:{duration: 0.1}}}
+
+      >
        <div className='home-abt'>
         <h1>home</h1>
        </div>
-      </div>
-    </section>
+      </motion.div>
 
     </>
   )
