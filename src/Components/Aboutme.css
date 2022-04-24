@@ -61,7 +61,7 @@
         width: 100%;
     }
 }
-.kashee-info span{
+.kashee-info .abt-kash{
     color:#264348;
     text-transform: capitalize;
     text-shadow: 3px 2px 5px #696969;
@@ -75,7 +75,7 @@
     width:0px;
     animation:reveal 3s infinite;
 } */
-.kashee-info:last-of-type span{
+.kashee-info:last-of-type .abt-kash{
     margin-left:-355px;
     animation:slidein 3.5s infinite ease-in-out;
 }
