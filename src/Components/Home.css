@@ -5,42 +5,40 @@
 }
 .home-abt{
     display: flex;
-    justify-content:flex-start;
-    align-items: center;
+    justify-content:center;
     padding-top:170px;
 }
-.karibu-info{
-    max-width:15rem;
-    margin-left:30px;
-    letter-spacing: 0.1em;
-    text-transform: capitalize;
-    font-family: 'Comfortaa',cursive;
-    color:#686868;
+.reveal{
+    padding:10px 20px;
+    border-radius: 20px;
+    box-shadow:5px 6px 5px  rgba(1,1,1,0.3);
+    background: url(../images/reveal_1.jpg) center/cover no-repeat;
+    object-fit: contain;
+    border:transparent;
+
 }
-.karibu-info span{
-    color:#008b8b;
-    text-transform: uppercase;
-    animation:move 3s ease-in-out infinite;
+.home-abt p{
+    color:aliceblue;
+    font-weight: 900;
+    font-size:medium;
 }
-@keyframes move{
-    0%{
-        transform:translate(-30%, 0)
-    }
-    50%{
-    text-shadow: 3px 2px 5px #696969;
-    }
-    100%{
-        transform: translate(30%, 0);
-    }
+.home-abt p span{
+    transition: .5s linear;
+    cursor:pointer;
+    letter-spacing: 0.188em;
+    line-height:1.5;
+    font-family: 'Comfortaa', cursive;
+}
+p:hover span:nth-child(1){
+    margin-right:5px;
+}
+p:hover span:nth-child(1)::before{
+    content: "Hey beautiful people "
+}
+p:hover span:nth-child(1)::after{
+    content: " to my creative space and enjoy your stay"
 }
 
-.karibu-info span::after{
-    content:'';
-    width:24%;
-    height:2px;
-    margin-left:15px;
-    margin-bottom:5px;
-    display:block;
-    background-color:#008b8b;
-}
+
+
 

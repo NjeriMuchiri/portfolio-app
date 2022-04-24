@@ -13,8 +13,10 @@ function Home(){
 
       >
        <div className='home-abt'>
-         <p className='karibu-info'>Hey 
-         beautiful people, <span>Welcome</span> all to my creative space and enjoy your stay!</p>
+         <button className='reveal'>
+         <p>
+         <span>Welcome</span>!<span></span></p>
+         </button>
        </div>
       </motion.div>
 
