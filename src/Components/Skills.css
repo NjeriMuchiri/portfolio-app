@@ -4,59 +4,120 @@
     box-sizing: border-box;
 }
 .skills-abt{
-    background:#fff0f5;
-    min-height: 135vh;
+    /* background:#fff0f5; */
+    min-height: 100vh;
     max-width:1470px;
 }
 .reveal-skills{
-   display:flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     background:url(../images/expand_1.jpg) center/cover no-repeat;
     padding:170px 80px;
     border-radius: 50px;
-    margin-top:200px;
     box-shadow:5px 6px 5px  rgba(1,1,1,0.4);
 }
+.skill_reveal{
+    margin-top:170px;
+}
 .skill-info{
-    color:aliceblue;
+    color:#fff5ee;
     line-height:1.5;
     letter-spacing: 0.1em;
 }
 .skills_1{
-  padding: 50px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 30px;
   border-radius: 30px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   position:absolute;
   top:47%;
 }
 .skills_2{
-    padding:50px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:40px 30px;
     border-radius: 40px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     position:absolute;
     left:33%;
     top:47%;
 }
 .skills_3{
-    padding:50px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:40px 30px;
     border-radius: 45px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     position:absolute;
     top:47%;
     left:56%;
 }
 .skills_4{
-    padding:50px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:40px 30px;
     border-radius: 45px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     position:absolute;
     left:78%;
     top:47%;
 }
-@media screen and (max-width: 800px) {
-    
+/* button styling */ 
+.revealing_time{
+    padding:10px 15px;
+    margin-top: 10px;
+    cursor:pointer;
+    border:transparent;
+    border-radius: 30px;
 }
+.revealing_time span{
+    letter-spacing: 0.1em;
+    font-family: 'Comfortaa', sans-serif;
+    transition:.5s linear;
+}
+.skills_sets{
+    text-decoration: none;
+}
+.revealing_time:hover span:nth-child(1){
+    margin-right: 5px;
+}
+.revealing_time:hover span:nth-child(1)::after{
+    content: " monjotronic solutions" ;
+}
+@media screen and (max-width: 800px) {
+    .skills-abt{
+        min-height:110vh;
+    }
+    .reveal-skills{
+        min-height:100vh;
+    }
+    .skills_1{
+        top:45%;
+        transform: translate(-18%, -10%);
+    }
+    .skills_2{
+        top:65%;
+        left:40%;
+        transform:translate(-5%, -10%);
+    }
+    .skills_3{
+        top:85%;
+        transform:translate(-90%,-2%);  
+    }
+    .skills_4{
+        top:105%;
+        transform:translate(-120%,-1%);
+         
+    }
+}
+
 
 
 
