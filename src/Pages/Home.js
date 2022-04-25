@@ -18,6 +18,9 @@ function Home(){
          <span>Welcome</span>!<span></span></p>
          </button>
        </div>
+       <div className='can-do'>
+          
+       </div>
       </motion.div>
 
     </>
