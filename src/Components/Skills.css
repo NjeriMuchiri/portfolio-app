@@ -85,10 +85,10 @@
 .skills_sets{
     text-decoration: none;
 }
-.revealing_time:hover span:nth-child(1){
+.button_reveal_monjo:hover span:nth-child(1){
     margin-right: 5px;
 }
-.revealing_time:hover span:nth-child(1)::after{
+.button_reveal_monjo:hover span:nth-child(1)::after{
     content: " monjotronic solutions" ;
 }
 @media screen and (max-width: 800px) {
